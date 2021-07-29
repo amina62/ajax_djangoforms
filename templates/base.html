@@ -66,13 +66,15 @@
                 })
 
                 function handleFormSuccess(data, textStatus, jqXHR){
-                    console.log(data)
-                    console.log(textStatus)
-                    console.log(jqXHR)
-                    $myForm[0].reset();
+                     $('.response_text').html(data.another_message)
+                    {#console.log(data.message)#}
+                    {#console.log(textStatus)#}
+                    {#console.log(jqXHR)#}
+                    {#$myForm[0].reset();#}
                 }
 
                 function handleFormError(jqXHR, textStatus, errorThrown){
+                    $('.response_text').append(jqXHR, textStatus, errorThrown)
                     console.log(jqXHR)
                     console.log(textStatus)
                     console.log(errorThrown)

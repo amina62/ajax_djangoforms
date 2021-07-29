@@ -7,6 +7,7 @@
     <form class="my-ajax-form" method="POST" action="/join/" data-url="/join/"> {% csrf_token %}
        <!-- <input type="hidden" name="csrfmiddlewaretoken" value="8du6BDTlmqVri9reS38K6505QZBJF7W16PqmyecQBYcSMJD3nDuBMEv8XpRMswA6"> -->
     {{ form.as_p }}
+    <p class="response_text"></p>
     <input class='btn btn-default' type='submit' value='Submit' />
     </form>
 </div>
